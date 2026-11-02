@@ -10,6 +10,8 @@ Speech recognition and text cleanup run entirely on your device. Models ship wit
 
 **Apple silicon · macOS 14 or later · approximately 800–950 MB RAM**
 
+**English only for now.**
+
 Memory use varies with your Mac, recording length, and processing.
 
 ## Download
