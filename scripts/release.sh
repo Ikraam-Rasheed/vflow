@@ -18,11 +18,10 @@ fi
 # Run on a normal Apple silicon Mac with Xcode and cached model weights.
 swift test --package-path "$SOURCE/native"
 bash "$SOURCE/scripts/build-native.sh"
-bash "$SOURCE/scripts/package-dmg.sh"
+VFLOW_APP_PATH="$SOURCE/dist/Vflow.app" bash "$ROOT/scripts/package-dmg.sh"
 VERSION="$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "$SOURCE/dist/Vflow.app/Contents/Info.plist")"
 NAME="Vflow-$VERSION-arm64.dmg"
 mkdir -p "$ROOT/artifacts"
-cp "$SOURCE/dist/$NAME" "$ROOT/artifacts/$NAME"
 (cd "$ROOT/artifacts" && shasum -a 256 "$NAME" > "$NAME.sha256")
 if "$PUBLISH"; then
   gh release create "v$VERSION" "$ROOT/artifacts/$NAME" "$ROOT/artifacts/$NAME.sha256" \

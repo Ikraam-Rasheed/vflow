@@ -11,4 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Check shell syntax
-        run: bash -n scripts/release.sh
+        run: for script in scripts/*.sh; do bash -n "$script"; done

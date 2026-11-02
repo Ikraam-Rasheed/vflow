@@ -9,13 +9,19 @@ export VFLOW_SOURCE_DIR=/absolute/path/to/small-models-stt-pipeline
 ./scripts/release.sh
 ```
 
-The pipeline runs native core tests, builds the app and bundled models, packages an ad-hoc signed DMG, verifies the app signature and disk image, and writes the DMG and checksum into the ignored `artifacts/` directory. The private source checkout must contain `scripts/build-native.sh` and `scripts/package-dmg.sh`.
+The pipeline runs native core tests, builds the app and bundled models, packages an ad-hoc signed DMG, verifies the app signature and disk image, and writes the DMG and checksum into the ignored `artifacts/` directory. The private source checkout must contain `scripts/build-native.sh`. DMG packaging is maintained in this release repository.
+
+To package an existing build without rebuilding:
+
+```sh
+VFLOW_APP_PATH=/absolute/path/to/Vflow.app ./scripts/package-dmg.sh
+```
 
 Open the DMG and test installation, permissions, recording, cleanup, cancellation, clipboard delivery, and offline use on another Mac before publication. Confirm model and dependency redistribution licenses and include required notices with the release. Check RAM usage on the release build before changing the published estimate.
 
 ## Publish a reviewed beta
 
-Create an empty public GitHub repository and push this folder’s Git repository to it. Keep application source and model weights out of its Git history. Install GitHub CLI and sign in with `gh auth login`.
+Create an empty public GitHub repository and push this folder’s Git repository to it. Keep application source and model weights out of its Git history. Install GitHub CLI with `brew install gh` and sign in with `gh auth login`.
 
 Write release notes describing changes and known issues, then run:
 
