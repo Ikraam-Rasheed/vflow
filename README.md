@@ -18,7 +18,7 @@ Get the latest DMG from this repository’s **Releases** page. This repository h
 
 This beta is ad-hoc signed and is not notarized by Apple. If macOS blocks it, attempt to open it, then go to **System Settings → Privacy & Security → Open Anyway**.
 
-If you trust the download, you can also remove quarantine from this app in Terminal:
+You can also remove quarantine from this app in Terminal:
 
 ```sh
 xattr -dr com.apple.quarantine "/Applications/Vflow.app"
