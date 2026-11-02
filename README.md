@@ -8,9 +8,9 @@ Offline dictation for your Mac. Hold Fn, speak, and release to put the text wher
 
 Speech recognition and text cleanup run entirely on your device. Models ship with the app, so dictation needs no internet connection, API key, or cloud service.
 
-**Apple silicon · macOS 14 or later · approximately 800–950 MB RAM in the maintainer’s usage**
+**Apple silicon · macOS 14 or later · approximately 800–950 MB RAM**
 
-Memory use varies with your Mac, recording length, and processing. This range is an approximate observation, not a guaranteed limit.
+Memory use varies with your Mac, recording length, and processing.
 
 ## Download
 
@@ -22,7 +22,7 @@ Get the latest DMG from the [Releases page](https://github.com/Ikraam-Rasheed/vf
 
 This beta is ad-hoc signed and is not notarized by Apple. If macOS blocks it, attempt to open it, then go to **System Settings → Privacy & Security → Open Anyway**.
 
-If you trust the download, you can also remove quarantine from this app in Terminal:
+You can also remove quarantine from this app in Terminal:
 
 ```sh
 xattr -dr com.apple.quarantine "/Applications/Vflow.app"
