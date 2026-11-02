@@ -4,9 +4,9 @@ Offline dictation for your Mac. Hold Fn, speak, and release to put the text wher
 
 Speech recognition and text cleanup run entirely on your device. Models ship with the app, so dictation needs no internet connection, API key, or cloud service.
 
-**Apple silicon · macOS 14 or later · approximately 800–950 MB RAM in the maintainer’s usage**
+**Apple silicon · macOS 14 or later · approximately 800–950 MB RAM**
 
-Memory use varies with your Mac, recording length, and processing. This range is an approximate observation, not a guaranteed limit.
+Memory use varies with your Mac, recording length, and processing.
 
 ## Download
 
