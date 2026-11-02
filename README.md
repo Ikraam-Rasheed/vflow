@@ -52,7 +52,7 @@ Vflow’s recognition and cleanup models are bundled in the download. Internet a
 
 ## Project and credits
 
-Vflow is a native SwiftUI and AppKit macOS app, developed as part of the **small-models-stt-pipeline** project. It uses Moonshine Base for speech recognition and Superwhisper’s S1-mini through MLX Swift for local cleanup.
+Vflow is a native SwiftUI and AppKit macOS app. It uses Moonshine Base for speech recognition and Superwhisper’s S1-mini through MLX Swift for local cleanup.
 
 - [Moonshine](https://github.com/moonshine-ai/moonshine)
 - [S1-mini by Superwhisper](https://huggingface.co/superwhisper/s1-mini)
