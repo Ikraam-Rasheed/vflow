@@ -1,0 +1,6 @@
+.DS_Store
+artifacts/
+.env
+*.app/
+*.dmg
+*.sha256
