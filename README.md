@@ -4,7 +4,7 @@
 
 # Vflow
 
-Offline dictation for your Mac. Hold Fn, speak, and release to put the text where you’re writing.
+Offline dictation for your Mac. Hold Fn, speak, and release to put the text where you’re writing. **Free and Unlimited**
 
 Speech recognition and text cleanup run entirely on your device. Models ship with the app, so dictation needs no internet connection, API key, or cloud service.
 
