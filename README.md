@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/vflow-logo.png" alt="Vflow waveform logo" width="128" height="128">
+</p>
+
 # Vflow
 
 Offline dictation for your Mac. Hold Fn, speak, and release to put the text where you’re writing.
@@ -10,7 +14,7 @@ Memory use varies with your Mac, recording length, and processing. This range is
 
 ## Download
 
-Get the latest DMG from this repository’s **Releases** page. This repository hosts Vflow downloads, release notes, and release tooling. Application source is maintained separately.
+Get the latest DMG from the [Releases page](https://github.com/Ikraam-Rasheed/vflow/releases/latest). Application source is maintained separately.
 
 1. Open the DMG and drag **Vflow** into **Applications**.
 2. Open Vflow from Applications.
@@ -56,4 +60,4 @@ Third-party components and model weights retain their respective licenses. This 
 
 ## Releases
 
-Each release contains an Apple silicon DMG and a SHA-256 checksum. See [RELEASING.md](RELEASING.md) for the build and publication pipeline.
+Each release contains an Apple silicon DMG and a SHA-256 checksum. Download both from the [Releases page](https://github.com/Ikraam-Rasheed/vflow/releases).
